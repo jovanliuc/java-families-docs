@@ -1,4 +1,4 @@
-# Overview
-> The java families docs, which is helping the newcomers 
-> to know and learn some basic conceptions or usages of 
-> java related technology stacks.
+# Introduction
+> The java families docs help newcomers know 
+> and learn some basic concepts or usages of 
+> java-related technology stacks.
