@@ -4,4 +4,5 @@
 > java-related technology stacks.
 
 # Java
+> [Basic Syntax](/java/basic-syntax.md)
 > [Basic Interview Questions](/java/basic-interview-questions.md)
