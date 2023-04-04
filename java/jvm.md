@@ -1,4 +1,4 @@
-# Java JVM Introduction
+# JVM Introduction
 
 The Java Virtual Machine (JVM) is a software 
 that executes Java bytecode. 
