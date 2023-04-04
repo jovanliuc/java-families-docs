@@ -4,5 +4,6 @@
 > java-related technology stacks.
 
 # Java
+> - [Introduction](/java/introduction.md)
 > - [Basic Syntax](/java/basic-syntax.md)
 > - [Basic Interview Questions](/java/basic-interview-questions.md)
