@@ -7,3 +7,4 @@
 > - [Introduction](/java/introduction.md)
 > - [Basic Syntax](/java/basic-syntax.md)
 > - [Basic Interview Questions](/java/basic-interview-questions.md)
+> - [JVM](/java/jvm.md)
