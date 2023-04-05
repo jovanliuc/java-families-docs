@@ -14,7 +14,7 @@
 > The JMM specifies the conditions under
 > which changes made by one thread become visible to other threads.
 >
-> the JMM also defines a set of actions 
+> The JMM also defines a set of actions 
 > that create synchronization barriers,
 > which guarantee that all threads see 
 > the same values in the memory at certain points in time. 
