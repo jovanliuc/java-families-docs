@@ -1,5 +1,5 @@
+[Back to Home](../README.md)
 # Java Memory Model (JMM)
-
 The Java Memory Model (JMM) is a set of rules 
 that govern how threads interact with the memory 
 when executing Java code.

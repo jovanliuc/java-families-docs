@@ -1,5 +1,4 @@
 [Back to Home](../README.md)
-
 # Overview
 Here are some Java basic interview questions 
 and their answers:
