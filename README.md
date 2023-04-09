@@ -10,3 +10,4 @@ java-related technology stacks.
 - [Java Virtual Machine](/java/jvm.md)
 - [Java Memory Model](/java/jmm.md)
 - [Java Garbage Collector](/java/jgc.md)
+- [Java Collection](/java/java-collection.md)
