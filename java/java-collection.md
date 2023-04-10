@@ -108,3 +108,96 @@ and managing the load factor,
 HashMap can provide constant-time performance 
 for adding, removing, and looking up elements
 in the map.
+
+# Hashtable
+In Java, a Hashtable is implemented as an array 
+of linked lists. Each element of the array is a bucket,
+and each bucket can contain zero or more entries 
+(key-value pairs). When a key-value pair is added 
+to the Hashtable, the key is hashed to determine
+which bucket it should be placed in. 
+If there are no entries in that bucket, 
+a new entry is added to the bucket. 
+If there are already entries in the bucket, 
+the new entry is added to the end of the linked list 
+in the bucket.
+
+The hash function used by the Hashtable class 
+maps keys to bucket indices in a way that is intended
+to minimize collisions (when two keys hash to 
+the same index). This is achieved 
+by using a combination of the key's hash code 
+and a prime number. The resulting hash value 
+is then modulo-ed with the size of the array 
+to get the index of the bucket.
+
+When retrieving a value from a Hashtable, 
+the key is hashed to determine which bucket 
+it should be in, and then the linked list in
+that bucket is searched for an entry 
+with a matching key. If a matching entry is found, 
+its value is returned. If no matching entry is found,
+null is returned.
+
+To ensure thread-safety, access to the Hashtable array 
+of buckets is synchronized. This means 
+that only one thread can modify the Hashtable 
+at a time, which can slow down performance 
+in multithreaded environments. 
+However, this also ensures that the Hashtable 
+is safe to use in concurrent applications.
+
+Sure, here's an example of how to use a Hashtable 
+in Java:
+
+```java
+import java.util.Hashtable;
+
+public class ExampleHashtable {
+public static void main(String[] args) {
+
+        // Creating a Hashtable with String keys and Integer values
+        Hashtable<String, Integer> grades = new Hashtable<>();
+        
+        // Adding key-value pairs to the Hashtable
+        grades.put("John", 90);
+        grades.put("Mary", 85);
+        grades.put("Bob", 95);
+        
+        // Retrieving a value from the Hashtable using its key
+        int johnGrade = grades.get("John");
+        System.out.println("John's grade is " + johnGrade);
+        
+        // Checking if a key exists in the Hashtable
+        boolean bobExists = grades.containsKey("Bob");
+        if (bobExists) {
+            System.out.println("Bob's grade is " + grades.get("Bob"));
+        } else {
+            System.out.println("Bob is not in the Hashtable.");
+        }
+        
+        // Removing a key-value pair from the Hashtable
+        grades.remove("Mary");
+        System.out.println("Hashtable after removing Mary: " + grades);
+    }
+}
+```
+
+In this example, we create a Hashtable object 
+called grades that maps String keys (student names) 
+to Integer values (test grades). 
+We add three key-value pairs to the Hashtable
+using the put() method.
+
+We then use the get() method to retrieve John's grade
+by passing his name as the key. 
+We also use the containsKey() method 
+to check if Bob's key exists in the Hashtable. 
+If it does, we retrieve and print out his grade. 
+If it doesn't, we print out a message saying 
+that Bob is not in the Hashtable.
+
+Finally, we remove Mary's key-value pair 
+from the Hashtable using the remove() method, 
+and print out the Hashtable to show 
+that her key-value pair has been removed.
