@@ -1,5 +1,5 @@
 [Back to Home](../README.md)
-# Java Collection Overview
+# Overview
 Java Collection Framework is a set of classes 
 and interfaces in Java that provide an architecture 
 to store and manipulate groups of objects. 
