@@ -201,3 +201,61 @@ Finally, we remove Mary's key-value pair
 from the Hashtable using the remove() method, 
 and print out the Hashtable to show 
 that her key-value pair has been removed.
+
+# Array
+In Java, an array is an object that holds a fixed number 
+of values of the same data type. 
+The elements of an array can be accessed 
+by their index, which starts at 0.
+
+To create an array in Java,
+you need to specify the data type of the elements 
+and the number of elements the array can hold. 
+Here's an example of creating an array
+of integers with 5 elements:
+
+```java
+int[] numbers = new int[5];
+```
+
+This creates an array named numbers 
+that can hold 5 integers. 
+The elements in the array are initialized
+to their default value, which for integers is 0.
+
+You can also initialize the elements 
+of an array when you create it, like this:
+
+```java
+int[] numbers = {1, 2, 3, 4, 5};
+```
+
+This creates an array named numbers 
+with 5 elements that are initialized 
+to the values 1, 2, 3, 4, and 5.
+
+To access an element in an array, 
+you use the index of the element in square brackets
+after the array name. For example:
+
+```java
+int firstNumber = numbers[0]; // gets the first element in the array
+numbers[2] = 10; // sets the third element in the array to 10
+```
+
+You can also loop through an array using a for loop,
+like this:
+
+```java
+for (int i = 0; i < numbers.length; i++) {
+    System.out.println(numbers[i]);
+}
+```
+This will print out each element in the numbers array 
+on a separate line.
+
+Arrays can be used in many different ways in Java,
+such as storing and manipulating data, sorting 
+and searching algorithms,
+and implementing data structures like stacks 
+and queues.
