@@ -381,3 +381,71 @@ and then add three elements to the Set.
 Since Sets do not allow duplicates, 
 if we try to add an element that is already 
 in the Set, it will be ignored.
+
+# Stack
+In Java, a stack is a data structure 
+that allows operations to be performed 
+on a collection of elements in a last-in, 
+first-out (LIFO) order. The stack has two 
+main operations: push and pop.
+
+The push operation adds an element to the top 
+of the stack, while the pop operation removes 
+the element at the top of the stack. 
+Other common operations include peek, 
+which returns the element at the top of the stack 
+without removing it, and isEmpty, which checks 
+if the stack is empty.
+
+Java provides a built-in implementation 
+of the stack data structure called java.util.Stack.
+It is a subclass of the Vector class and provides 
+all the operations mentioned above. 
+However, the use of java.util.Stack is discouraged 
+due to its synchronization overhead 
+and poor performance compared to other implementations.
+
+Instead, the Deque interface is preferred 
+for implementing a stack in Java. 
+Deque stands for double-ended queue 
+and provides the same LIFO behavior as a stack. 
+The LinkedList class in Java implements the Deque interface 
+and can be used to create a stack. 
+Here is an example of using LinkedList 
+to create a stack in Java:
+
+```java
+import java.util.LinkedList;
+
+public class StackExample {
+    public static void main(String[] args) {
+        LinkedList<Integer> stack = new LinkedList<Integer>();
+        
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        
+        System.out.println("Stack: " + stack);
+        
+        int top = stack.pop();
+        System.out.println("Popped element: " + top);
+        System.out.println("Stack after pop: " + stack);
+        
+        int peek = stack.peek();
+        System.out.println("Peeked element: " + peek);
+        System.out.println("Stack after peek: " + stack);
+    }
+}
+```
+
+This code creates a stack of integers 
+using LinkedList and performs push, pop, 
+and peek operations on it. The output of the program will be:
+
+```yaml
+Stack: [3, 2, 1]
+Popped element: 3
+Stack after pop: [2, 1]
+Peeked element: 2
+Stack after peek: [2, 1]
+```
