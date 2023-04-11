@@ -187,18 +187,18 @@ In this example, we create a Hashtable object
 called grades that maps String keys (student names) 
 to Integer values (test grades). 
 We add three key-value pairs to the Hashtable
-using the put() method.
+using the `put()` method.
 
-We then use the get() method to retrieve John's grade
+We then use the `get()` method to retrieve John's grade
 by passing his name as the key. 
-We also use the containsKey() method 
+We also use the `containsKey()` method 
 to check if Bob's key exists in the Hashtable. 
 If it does, we retrieve and print out his grade. 
 If it doesn't, we print out a message saying 
 that Bob is not in the Hashtable.
 
 Finally, we remove Mary's key-value pair 
-from the Hashtable using the remove() method, 
+from the Hashtable using the `remove()` method, 
 and print out the Hashtable to show 
 that her key-value pair has been removed.
 
@@ -479,15 +479,15 @@ public class Main {
 ```
 
 In this example, we create a Vector of type Integer 
-and add three elements to it using the add() method.
+and add three elements to it using the `add()` method.
 Finally, we print the contents of the Vector 
-using the println() method.
+using the `println()` method.
 
 Vector has many methods that you can use 
-to manipulate its contents, including add(), 
-remove(), size(), get(), and set(). 
+to manipulate its contents, including `add()`, 
+`remove()`, `size()`, `get()`, and `set()`. 
 It also has methods for iterating over its elements,
-such as iterator(), listIterator(), and forEach(). 
+such as `iterator()`, `listIterator()`, and `forEach()`. 
 Additionally, Vector supports various methods 
 for searching and sorting its elements.
 
@@ -506,11 +506,11 @@ on the elements of a queue.
 
 Some common methods provided by the Java Queue interface are:
 
-- add(element) - This method adds an element to the end of the queue.
-- remove() - This method removes and returns the element at the front of the queue.
-- peek() - This method returns the element at the front of the queue without removing it.
-- isEmpty() - This method returns true if the queue is empty, false otherwise.
-- size() - This method returns the number of elements in the queue.
+- `add(element)` - This method adds an element to the end of the queue.
+- `remove()` - This method removes and returns the element at the front of the queue.
+- `peek()` - This method returns the element at the front of the queue without removing it.
+- `isEmpty()` - This method returns true if the queue is empty, false otherwise.
+- `size()` - This method returns the number of elements in the queue.
 
 There are several classes in Java 
 that implement the Queue interface, 
