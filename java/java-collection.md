@@ -327,3 +327,57 @@ for (String element : myList) {
     System.out.println(element);
 }
 ```
+
+# Set
+In Java, a Set is an interface in the Java Collections 
+Framework that represents a collection 
+of unique elements. It is similar to a List, 
+but unlike a List, a Set does not allow 
+duplicate elements.
+
+Java provides several implementations 
+of the Set interface, including:
+
+HashSet: This is the most commonly used 
+implementation of the Set interface. 
+It uses a hash table to store elements 
+and offers constant-time performance 
+for the basic operations (add, remove, and contains).
+
+TreeSet: This implementation uses a tree structure 
+to store elements, which allows for efficient traversal 
+of the elements in sorted order. 
+However, the basic operations 
+(add, remove, and contains) have a time complexity 
+of O(log n).
+
+LinkedHashSet: This implementation is similar 
+to HashSet, but it maintains a linked list
+of the elements in insertion order. 
+This means that iterating over the elements 
+in a LinkedHashSet will return them in the order
+in which they were added.
+
+All Set implementations in Java provide 
+the basic operations of adding, removing, 
+and checking if an element is present in the Set. 
+They also support operations for iterating over 
+the elements in the Set, checking the size 
+of the Set, and checking if the Set is empty.
+
+Here's an example of how to create a HashSet 
+and add elements to it:
+
+```java
+Set<String> mySet = new HashSet<>();
+mySet.add("apple");
+mySet.add("banana");
+mySet.add("orange");
+```
+
+In this example, we create a Set of Strings
+using the HashSet implementation, 
+and then add three elements to the Set.
+Since Sets do not allow duplicates, 
+if we try to add an element that is already 
+in the Set, it will be ignored.
