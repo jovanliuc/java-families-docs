@@ -254,7 +254,7 @@ for (int i = 0; i < numbers.length; i++) {
 This will print out each element in the numbers array 
 on a separate line.
 
-Arrays can be used in many different ways in Java,
+Arrays can be used in many ways in Java,
 such as storing and manipulating data, sorting 
 and searching algorithms,
 and implementing data structures like stacks 
