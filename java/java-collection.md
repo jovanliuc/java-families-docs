@@ -495,3 +495,71 @@ Note that while Vector is thread-safe,
 its synchronization can have a performance impact.
 If you do not need thread-safety, consider 
 using ArrayList instead.
+
+# Queue
+In Java, a queue is a collection of elements
+that follow the FIFO (first-in, first-out) principle.
+The Java Queue interface is a subtype 
+of the Java Collection interface and provides 
+a set of methods for performing various operations 
+on the elements of a queue.
+
+Some common methods provided by the Java Queue interface are:
+
+- add(element) - This method adds an element to the end of the queue.
+- remove() - This method removes and returns the element at the front of the queue.
+- peek() - This method returns the element at the front of the queue without removing it.
+- isEmpty() - This method returns true if the queue is empty, false otherwise.
+- size() - This method returns the number of elements in the queue.
+
+There are several classes in Java 
+that implement the Queue interface, 
+including LinkedList, ArrayDeque, and PriorityQueue.
+Here is an example of how to use 
+the LinkedList class to create a queue:
+
+```java
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class ExampleQueue {
+
+    public static void main(String[] args) {
+
+        Queue<String> queue = new LinkedList<>();
+
+        // Adding elements to the queue
+        queue.add("element1");
+        queue.add("element2");
+        queue.add("element3");
+
+        // Displaying the elements of the queue
+        System.out.println("Elements in the queue: " + queue);
+
+        // Removing the element at the front of the queue
+        String removedElement = queue.remove();
+        System.out.println("Removed element: " + removedElement);
+
+        // Displaying the elements of the queue after removal
+        System.out.println("Elements in the queue: " + queue);
+
+        // Checking if the queue is empty
+        boolean isQueueEmpty = queue.isEmpty();
+        System.out.println("Is the queue empty? " + isQueueEmpty);
+
+        // Retrieving the element at the front of the queue without removing it
+        String frontElement = queue.peek();
+        System.out.println("Element at the front of the queue: " + frontElement);
+    }
+}
+```
+
+Output:
+
+```yaml
+Elements in the queue: [element1, element2, element3]
+Removed element: element1
+Elements in the queue: [element2, element3]
+Is the queue empty? false
+Element at the front of the queue: element2
+```
