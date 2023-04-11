@@ -449,3 +449,49 @@ Stack after pop: [2, 1]
 Peeked element: 2
 Stack after peek: [2, 1]
 ```
+
+# Vector
+Java Vector is a dynamic array-like data structure 
+that can resize itself automatically. 
+It is similar to an ArrayList, 
+but Vector is synchronized, 
+which means that all its methods are thread-safe.
+This makes Vector suitable for use 
+in multithreaded applications.
+
+To use Vector in your Java program, 
+you need to import the java.util.
+Vector package. Here is an example 
+of how to create a Vector:
+
+```java
+import java.util.Vector;
+
+public class Main {
+    public static void main(String[] args) {
+        Vector<Integer> v = new Vector<Integer>();
+        v.add(1);
+        v.add(2);
+        v.add(3);
+        System.out.println(v);
+    }
+}
+```
+
+In this example, we create a Vector of type Integer 
+and add three elements to it using the add() method.
+Finally, we print the contents of the Vector 
+using the println() method.
+
+Vector has many methods that you can use 
+to manipulate its contents, including add(), 
+remove(), size(), get(), and set(). 
+It also has methods for iterating over its elements,
+such as iterator(), listIterator(), and forEach(). 
+Additionally, Vector supports various methods 
+for searching and sorting its elements.
+
+Note that while Vector is thread-safe, 
+its synchronization can have a performance impact.
+If you do not need thread-safety, consider 
+using ArrayList instead.
