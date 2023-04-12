@@ -80,3 +80,111 @@ can accept a List of objects that extend the
 Number class, such as Integer, Double, or BigDecimal.
 This allows you to write more generic code 
 that works with a wider range of types.
+
+# FAQ
+## What is a generic in Java?
+Generics allow you to define classes, interfaces, 
+and methods that can work with any type. 
+A generic type is a class or interface that 
+is parameterized over types.
+The parameterized types are referred to 
+as type parameters.
+
+## What is a wildcard in Java generics?
+A wildcard in Java generics is a special type argument
+that can be used to match any type. 
+The wildcard character "?" 
+is used to represent an unknown type.
+
+## What is the difference between <? extends T> and <? super T>?
+\<? extends T\> is a bounded wildcard 
+that allows any type that is a subtype of T or T itself. 
+It is useful when you want to read from a collection, 
+but not write to it. <? super T> is also a bounded wildcard 
+that allows any type that is a supertype of T or T itself. 
+It is useful when you want to write to a collection, 
+but not read from it.
+
+## Can you give an example of how to use a wildcard in Java generics?
+Yes, for example, suppose we have a method that takes 
+a list of numbers and returns the sum. We can use
+a wildcard to make the method more flexible, as follows:
+
+```java
+public static double sum(List<? extends Number> numbers) {
+    double sum = 0.0;
+    for (Number number : numbers) {
+        sum += number.doubleValue();
+    }
+    return sum;
+}
+```
+This method can now accept a List of any type 
+that is a subtype of Number, 
+such as Integer, Double, or Float.
+
+## What is type erasure in Java generics?
+Type erasure is the process of removing 
+all generic type information from a program
+when it is compiled. This is done to ensure compatibility
+with pre-existing code 
+that was not designed to work with generics.
+
+## How can you create a generic class in Java?
+To create a generic class in Java, 
+you can use the following syntax:
+
+```java
+public class MyClass<T> {
+    // class definition
+}
+```
+
+The "T" in angle brackets is the type parameter,
+which can be replaced by any class or interface.
+
+## Can you create a generic method in a non-generic class?
+Yes, you can create a generic method in a non-generic class. 
+To do so, you need to declare the type parameter
+before the return type, as follows:
+
+```java
+public class MyClass {
+    public <T> void myGenericMethod(T t) {
+        // method body
+    }
+}
+```
+
+## What is a raw type in Java generics?
+A raw type in Java generics is a class or interface 
+that is used without any type parameter. 
+Raw types are allowed for compatibility 
+with pre-existing code 
+that was not designed to work with generics.
+
+## What is type inference in Java generics?
+Type inference in Java generics is the process 
+by which the Java compiler infers the type arguments 
+for a generic method invocation, based on the context
+in which the method is called.
+
+## What is the difference between a generic and a parameterized type?
+A generic is a type that is parameterized over types. 
+A parameterized type is a specific instance of a generic,
+with actual type arguments supplied for the type parameters.
+
+## Can you use a wildcard in a method return type?
+Yes, you can use a wildcard in a method return type. 
+For example, you can declare a method 
+that returns a List of any type 
+that is a subtype of Number, as follows:
+
+```java
+public List<? extends Number> getNumbers() {
+    // method body
+}
+```
+
+This method can return a List of any type 
+that is a subtype of Number.
