@@ -96,11 +96,12 @@ that can be used to match any type.
 The wildcard character "?" 
 is used to represent an unknown type.
 
-## What is the difference between <? extends T> and <? super T>?
+## What is the difference between \<? extends T\> and \<? super T\>?
 \<? extends T\> is a bounded wildcard 
 that allows any type that is a subtype of T or T itself. 
 It is useful when you want to read from a collection, 
-but not write to it. <? super T> is also a bounded wildcard 
+but not write to it. 
+\<? super T\> is also a bounded wildcard 
 that allows any type that is a supertype of T or T itself. 
 It is useful when you want to write to a collection, 
 but not read from it.
