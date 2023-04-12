@@ -11,3 +11,4 @@ java-related technology stacks.
 - [Java Memory Model](/java/jmm.md)
 - [Java Garbage Collector](/java/jgc.md)
 - [Java Collection](/java/java-collection.md)
+- [Java Serialization](/java/java-serialization.md)
