@@ -1,7 +1,7 @@
 # Introduction
-The java families docs help newcomers know 
-and learn some basic concepts or usages of 
-java-related technology stacks.
+The `java-families-docs` helps the newcomers 
+to learn some basic concepts 
+and the usages of Java-related technical stacks.
 
 # Java
 - [Java Introduction](/java/java-introduction.md)
