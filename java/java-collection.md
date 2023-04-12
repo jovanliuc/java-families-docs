@@ -623,3 +623,51 @@ Some common operations that can be performed
 on trees include adding and removing nodes, 
 traversing the tree to visit each node, 
 and searching for a specific node or value.
+
+# Hash Collision
+Hash collisions occur when two or more inputs produce
+the same hash value. This can happen due 
+to the finite size of the hash space
+or due to poor hash function design. 
+Here are some ways to resolve hash collisions:
+
+1. Separate Chaining: In this method, 
+each bucket of the hash table is a linked list. 
+When a collision occurs, the new item is added 
+to the linked list corresponding to the hash value
+of the key. This approach allows multiple items 
+to exist in the same bucket.
+
+2. Open Addressing: In this method, 
+when a collision occurs, the algorithm searches 
+for an empty slot in the hash table to insert the item.
+This can be done using linear probing, 
+quadratic probing or double hashing.
+
+3. Robin Hood Hashing: This method uses 
+open addressing but with a twist. 
+When a collision occurs, the algorithm checks
+the distance between the existing item 
+and the desired slot. If the new item can be inserted
+with less displacement, then it "steals" the slot 
+of the existing item, and that item is moved to 
+the next available slot.
+
+4. Perfect Hashing: This method involves creating 
+a hash function that guarantees no collisions. 
+It requires precomputing the hash values for all 
+possible keys and ensuring that each key maps 
+to a unique index in the hash table.
+
+5. Cuckoo Hashing: This method also uses open
+addressing. It involves having two separate 
+hash tables, and when a collision occurs in one table, 
+the item is moved to the other table. 
+This process continues until either a free slot
+is found or a maximum number of displacements 
+is reached.
+
+Each of these methods has its own strengths 
+and weaknesses, and the choice of which to use 
+depends on the specific requirements of the 
+application.
