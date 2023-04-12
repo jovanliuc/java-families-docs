@@ -81,6 +81,66 @@ Number class, such as Integer, Double, or BigDecimal.
 This allows you to write more generic code 
 that works with a wider range of types.
 
+# Type Erasure
+Java type erasure refers to the process by which
+the Java compiler removes type information 
+from generic code at compile time. 
+This is done to maintain compatibility 
+with legacy code that was written 
+before the introduction of generics in Java 5.
+
+When you write generic code in Java,
+you use type parameters to define 
+the type of the objects that will 
+be stored in a collection or used
+as a method parameter. For example, 
+you might write a method that takes 
+a `List` of Strings as a parameter:
+
+```java
+public void printList(List<String> list) {
+    for (String s : list) {
+        System.out.println(s);
+    }
+}
+```
+
+At compile time, the Java compiler replaces 
+the type parameter `List<String>` with the raw type List. 
+This means that the type information is erased, 
+and the method signature becomes:
+
+```java
+public void printList(List list) {
+    for (Object o : list) {
+        String s = (String) o;
+        System.out.println(s);
+    }
+}
+```
+
+As you can see, the type information has been removed, 
+and the code now uses the raw type `List` instead of `List<String>`. 
+This can cause problems if you try to access 
+the generic type information at runtime, 
+because it is no longer available.
+
+To work around this, Java uses a process 
+called type bounds to ensure that the generic code
+is type-safe at runtime. 
+Type bounds specify the upper and lower limits
+of the type that can be used with 
+a generic class or method. 
+For example, the type bound `extends Number` specifies 
+that the generic type must be a subclass 
+of the `Number` class.
+
+In summary, Java erasure is the process 
+by which the Java compiler removes type information 
+from generic code at compile time, 
+and type bounds are used 
+to ensure type safety at runtime.
+
 # FAQ
 ## What is a generic in Java?
 Generics allow you to define classes, interfaces, 
