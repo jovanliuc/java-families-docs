@@ -671,3 +671,102 @@ Each of these methods has its own strengths
 and weaknesses, and the choice of which to use 
 depends on the specific requirements of the 
 application.
+
+# FAQ
+## 1. What is a Collection in Java?
+A Collection is an interface in Java 
+that represents a group of objects known as elements.
+It is used to store, retrieve, and manipulate data 
+in memory. The Java Collection framework provides 
+several classes and interfaces to implement 
+different types of collections, such as List, 
+Set, Map, Queue, etc.
+
+## 2. What is the difference between a List and a Set in Java?
+A List is an ordered collection that allows 
+duplicate elements, whereas a Set is an unordered 
+collection that does not allow duplicate elements.
+In a List, elements are accessed based on their 
+index position, whereas in a Set, elements are
+accessed using an iterator.
+
+## 3. What is the difference between an ArrayList and a LinkedList in Java?
+An ArrayList is a resizable array that implements
+the List interface, whereas a LinkedList is a 
+doubly-linked list that implements both the List 
+and Queue interfaces. ArrayList is faster than
+LinkedList when it comes to accessing elements 
+randomly, whereas LinkedList is faster 
+when it comes to adding or removing elements 
+from the beginning or end of the list.
+
+## 4. What is the difference between a HashMap and a TreeMap in Java?
+A HashMap is an unordered collection 
+that stores elements in the form of key-value pairs,
+whereas a TreeMap is a sorted collection 
+that stores elements in the form of key-value pairs 
+in a sorted order. HashMap provides faster access 
+to elements, whereas TreeMap provides faster 
+retrieval of the smallest or largest element 
+in the collection.
+
+## 5. What is the difference between a Iterator and a ListIterator in Java?
+An Iterator is used to traverse a collection 
+in a forward direction and supports read and
+remove operations, whereas a ListIterator 
+is used to traverse a List in both forward 
+and backward directions and supports read, 
+remove, replace, and add operations. 
+ListIterator is only available for Lists, 
+whereas Iterator is available for all collections.
+
+## 6. What is the difference between fail-fast and fail-safe iterators in Java?
+Fail-fast iterators throw a ConcurrentModificationException
+if a collection is modified while iterating over it,
+whereas fail-safe iterators make a copy of 
+the collection and iterate over the copy, 
+so they do not throw ConcurrentModificationException.
+Fail-fast iterators are more efficient, 
+whereas fail-safe iterators are safer to use.
+
+## 7. What is the difference between a HashSet and a LinkedHashSet in Java?
+A HashSet is an unordered collection 
+that does not allow duplicate elements, 
+whereas a LinkedHashSet is an ordered collection 
+that maintains the order of elements in which
+they were inserted and does not allow duplicate
+elements. LinkedHashSet is slower than HashSet 
+when it comes to adding or removing elements,
+but it is faster when it comes to iterating 
+over the collection in the order in which 
+elements were inserted.
+
+## 8. What is the difference between a Queue and a Stack in Java?
+A Queue is a collection that stores elements 
+in a FIFO (First In First Out) order, 
+whereas a Stack is a collection that stores 
+elements in a LIFO (Last In First Out) order. 
+In a Queue, elements are added at the end 
+and removed from the beginning, 
+whereas in a Stack, elements are added at the top
+and removed from the top.
+
+## 9. What is the difference between a ConcurrentHashMap and a synchronized HashMap in Java?
+ConcurrentHashMap is a thread-safe collection 
+that provides higher concurrency and scalability
+than synchronized HashMap, whereas synchronized
+HashMap provides mutual exclusion and can be used 
+in single-threaded or low-concurrency environments.
+ConcurrentHashMap does not lock the entire
+collection while performing operations, 
+whereas synchronized HashMap locks the entire 
+collection.
+
+## 10. What is the difference between a Comparator and a Comparable in Java?
+A Comparator is an interface that is used to 
+compare two objects based on some criteria, 
+whereas a Comparable is an interface that is used
+to compare two objects based on their natural ordering.
+A Comparator is used when you want to sort objects 
+based on a custom ordering, whereas a Comparable 
+is used.
