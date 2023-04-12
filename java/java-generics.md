@@ -30,8 +30,8 @@ public class Box<T> {
 ```
 
 The Box class has a single type parameter T, 
-which can be any type. The setItem method 
-takes an argument of type T, and the getItem method
+which can be any type. The `setItem` method 
+takes an argument of type T, and the `getItem` method
 returns an object of type T. When you create an 
 instance of the Box class, you specify the actual 
 type to use for T.
@@ -54,7 +54,7 @@ public void printList(List<?> list) {
 }
 ```
 
-The printList method takes a List of objects of 
+The `printList` method takes a List of objects of 
 an unknown type using the wildcard ?. 
 This means that the method can accept a List of 
 any type. The method then iterates over the elements
