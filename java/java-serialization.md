@@ -8,7 +8,7 @@ to be easily stored, transmitted, and reconstructed
 later on.
 
 To serialize an object, it must implement the 
-java.io.Serializable interface, 
+`java.io.Serializable` interface, 
 which is a marker interface that indicates 
 that the object can be serialized.
 Once an object is serialized, it can be stored 
@@ -18,7 +18,7 @@ To deserialize an object, the opposite process
 is followed. The stream of bytes representing 
 the object is read, and the object is reconstructed 
 back into its original form. Deserialization is done 
-using the ObjectInputStream class.
+using the `ObjectInputStream` class.
 
 One of the advantages of Java Serialization is 
 that it is a language-level feature, 
@@ -63,7 +63,7 @@ and deserialized objects are compatible.
 If the serialVersionUID of the serialized object 
 is different from the serialVersionUID of the 
 class during deserialization, 
-then an InvalidClassException is thrown.
+then an `InvalidClassException` is thrown.
 
 ## What are the advantages of Java Serialization?
 Java Serialization has the following advantages:
@@ -109,7 +109,7 @@ a class exists in the JVM.
 
 ## What happens when a non-serializable object is serialized?
 If a non-serializable object is serialized,
-a NotSerializableException is thrown at runtime.
+a `NotSerializableException` is thrown at runtime.
 To make an object serializable, 
 it must implement the Serializable interface.
 
