@@ -13,3 +13,4 @@ and the usages of Java-related technical stacks.
 - [Java Collection](/java/java-collection.md)
 - [Java Serialization](/java/java-serialization.md)
 - [Java Generics](/java/java-generics.md)
+- [Java Reflection](/java/java-reflection.md)
