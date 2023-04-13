@@ -14,3 +14,4 @@ and the usages of Java-related technical stacks.
 - [Java Serialization](/java/java-serialization.md)
 - [Java Generics](/java/java-generics.md)
 - [Java Reflection](/java/java-reflection.md)
+- [Java Proxy](/java/java-proxy.md)
