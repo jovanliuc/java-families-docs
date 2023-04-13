@@ -11,7 +11,7 @@ they were not accessible
 or known at compile-time.
 
 Reflection API provides a set of classes 
-and interfaces in the `java.lang.reflect package`,
+and interfaces in the `java.lang.reflect` package,
 such as Class, Field, Method, Constructor, 
 and Parameter, which allow you to retrieve information
 about the structure and behavior of a class or an object.
@@ -90,7 +90,7 @@ than traditional Java code
 
 ## 6. What is the reflection API in Java?
 The reflection API in Java is a set of classes
-and interfaces in the java.lang.reflect package
+and interfaces in the `java.lang.reflect` package
 that provides the ability to examine 
 and modify the runtime behavior of Java programs. 
 It includes classes such as Class, Method, Field, 
