@@ -20,11 +20,11 @@ for handling text data,
 such as files containing text.
 
 Java provides several classes for 
-reading and writing files, such as FileInputStream 
-and FileOutputStream for reading 
-and writing binary files, and FileReader 
-and FileWriter for reading and writing text files. 
-Here's an example of using the FileInputStream 
+reading and writing files, such as `FileInputStream` 
+and `FileOutputStream` for reading 
+and writing binary files, and `FileReader` 
+and `FileWriter` for reading and writing text files. 
+Here's an example of using the `FileInputStream` 
 class to read a file:
 ```java
 try (FileInputStream inputStream = new FileInputStream("myfile.txt")) {
@@ -37,17 +37,17 @@ try (FileInputStream inputStream = new FileInputStream("myfile.txt")) {
     // handle exception
 }
 ```
-In this example, we create a FileInputStream
-object to read from the file "myfile.txt". 
+In this example, we create a `FileInputStream`
+object to read from the file `myfile.txt`. 
 We then create a byte array to store the 
 data read from the file, and read from 
 the file into the buffer in a loop until 
 the end of the file is reached.
 
 Java also provides several classes for 
-working with network connections, such as Socket
-and ServerSocket. Here's an example of using
-the Socket class to connect to a remote server:
+working with network connections, such as `Socket`
+and `ServerSocket`. Here's an example of using
+the `Socket` class to connect to a remote server:
 ```java
 try (Socket socket = new Socket("www.example.com", 80)) {
     OutputStream outputStream = socket.getOutputStream();
@@ -60,11 +60,11 @@ try (Socket socket = new Socket("www.example.com", 80)) {
     // handle exception
 }
 ```
-In this example, we create a Socket object 
+In this example, we create a `Socket` object 
 to connect to the remote server `www.example.com`
-on port 80. We then create an OutputStream 
+on port 80. We then create an `OutputStream` 
 to send a GET request to the server,
-and an InputStream to receive the response.
+and an `InputStream` to receive the response.
 
 Finally, Java also provides several classes
 for working with memory buffers, 
@@ -91,7 +91,7 @@ I hope this gives you a good overview of Java I/O
 and how to use it in your programs!
 
 # Blocking I/O (BIO)
-n Java, BIO stands for Blocking I/O, 
+In Java, BIO stands for Blocking I/O, 
 which is a traditional I/O model where 
 the calling thread blocks until the I/O 
 operation is completed. 
@@ -105,8 +105,8 @@ In Java, blocking I/O is implemented
 using streams, which are objects used 
 to read from or write to a source. 
 The most common stream classes 
-for blocking I/O are InputStream 
-and OutputStream, which are used 
+for blocking I/O are `InputStream` 
+and `OutputStream`, which are used 
 for reading and writing bytes, respectively.
 
 Here's an example of using a blocking I/O to read data from a file:
@@ -169,18 +169,18 @@ and interfaces that allow for
 non-blocking I/O operations.
 
 The key classes and interfaces in Java NIO include:
-- Channels: Channels are similar to streams, 
+- `Channels`: Channels are similar to streams, 
 but they can be both readable and writable, 
 and can be non-blocking. 
 The main channel classes are FileChannel,
 DatagramChannel, and SocketChannel.
-- Buffers: Buffers are used to hold data 
+- `Buffers`: Buffers are used to hold data 
 for input and output operations. 
 They can be read from or written to,
 and they are used in conjunction 
 with channels to transfer data 
 between the application and I/O devices.
-- Selectors: Selectors are used 
+- `Selectors`: Selectors are used 
 to monitor multiple channels 
 for I/O events, such as data being 
 ready to read or write. 
@@ -207,10 +207,10 @@ try (RandomAccessFile file = new RandomAccessFile("file.txt", "r")) {
     // handle exception
 }
 ```
-In this example, we use a RandomAccessFile 
-to open the file "file.txt" in read-only mode.
-We then get a FileChannel from the file, 
-create a ByteBuffer to hold the data, 
+In this example, we use a `RandomAccessFile` 
+to open the file `file.txt` in read-only mode.
+We then get a `FileChannel` from the file, 
+create a `ByteBuffer` to hold the data, 
 and read data from the channel into the buffer. 
 We then process the data in the buffer, 
 and continue reading data from the channel
@@ -250,9 +250,9 @@ try (ServerSocketChannel serverSocketChannel = ServerSocketChannel.open()) {
     // handle exception
 }
 ```
-In this example, we create a ServerSocketChannel 
+In this example, we create a `ServerSocketChannel` 
 and configure it to be non-blocking.
-We then bind the channel to port 8080 
+We then bind the channel to port `8080` 
 and register it with a Selector, 
 which will monitor the channel for incoming connections. 
 We then enter a loop that will wait for I/O events 
@@ -311,14 +311,14 @@ try (AsynchronousFileChannel fileChannel = AsynchronousFileChannel.open(Paths.ge
 }
 ```
 In this example, we use `AsynchronousFileChannel` 
-to open the file "file.txt" and read data from 
-it asynchronously. We create a ByteBuffer to hold
+to open the file `file.txt` and read data from 
+it asynchronously. We create a `ByteBuffer` to hold
 the data, and then call the `read()` method on 
 the file channel, passing in the buffer, 
 the position in the file to start reading from, 
 and a `CompletionHandler` that defines the callback
 methods to be invoked when the read operation is completed. 
-In the `completed()` method of the CompletionHandler,
+In the `completed()` method of the `CompletionHandler`,
 we process the data in the buffer, and in the `failed()` method,
 we handle any exceptions that occurred during the read operation.
 
@@ -369,8 +369,8 @@ try (AsynchronousServerSocketChannel serverSocketChannel = AsynchronousServerSoc
 }
 ```
 In this example, we create an `AsynchronousServerSocketChannel`
-and bind it to port 8080. We then call the `accept()` 
-method on the channel, passing in a CompletionHandler.
+and bind it to port `8080`. We then call the `accept()` 
+method on the channel, passing in a `CompletionHandler`.
 
 # Java I/O FAQ
 ## 1. What is Java IO?
@@ -386,14 +386,14 @@ Byte streams are used to read and write
 binary data, while character streams 
 are used to read and write text data.
 
-## 3. What is the difference between FileInputStream and FileReader?
-FileInputStream is a byte stream used to 
-read binary data from a file, while FileReader
+## 3. What is the difference between `FileInputStream` and `FileReader`?
+`FileInputStream` is a byte stream used to 
+read binary data from a file, while `FileReader`
 is a character stream used to read text 
 data from a file.
 
-## 4. What is a BufferedOutputStream?
-A BufferedOutputStream is an OutputStream 
+## 4. What is a `BufferedOutputStream`?
+A `BufferedOutputStream` is an `OutputStream` 
 that adds buffering to an underlying output stream, 
 which can improve performance by reducing the number 
 of system calls needed to write data.
@@ -405,14 +405,14 @@ it can be stored in a file or transmitted over a network.
 Deserialization is the reverse process of 
 converting a stream of bytes back into an object.
 
-## 6. What is the purpose of the java.nio package?
-The java.nio (New I/O) package provides a set of
+## 6. What is the purpose of the `java.nio` package?
+The `java.nio` (New I/O) package provides a set of
 APIs for performing non-blocking I/O operations,
 which can improve performance and scalability 
 of I/O-intensive applications.
 
-## 7. What is a FileChannel in Java NIO?
-A FileChannel is a channel that is used to read 
+## 7. What is a `FileChannel` in Java NIO?
+A `FileChannel` is a channel that is used to read 
 from and write to files in Java NIO. 
 It provides methods for reading and writing 
 data at specific positions in a file,
