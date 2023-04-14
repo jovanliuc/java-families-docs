@@ -17,3 +17,4 @@ and the usages of Java-related technical stacks.
 - [Java Proxy](/java/java-proxy.md)
 - [Java Annotation](java/java-annotation.md)
 - [Java I/O](java/java-io.md)
+- [Java Exception](/java/java-exception.md)
