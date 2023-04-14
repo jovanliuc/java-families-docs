@@ -49,7 +49,7 @@ default values.
 Annotations can also have retention policies
 that specify how long they should be retained,
 such as `SOURCE` (compile-time only),
-CLASS (compile-time and runtime), 
+`CLASS` (compile-time and runtime), 
 and `RUNTIME` (runtime only).
 
 ## 3. How are annotations used in Java?
