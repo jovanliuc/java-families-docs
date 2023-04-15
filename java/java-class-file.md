@@ -14,7 +14,7 @@ into a number of components, including:
 1. Magic number: The first four bytes of a bytecode 
 file always contain a magic number 
 that identifies the file as a Java bytecode file. 
-The magic number is 0xCAFEBABE.
+The magic number is `0xCAFEBABE`.
 
 2. Version information: The next four bytes contain
 the minor and major version numbers of the bytecode file. 
