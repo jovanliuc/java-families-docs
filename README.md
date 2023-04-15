@@ -11,6 +11,7 @@ and the usages of Java-related technical stacks.
 - [Java Memory Model](/java/java-memory-model.md)
 - [Java Garbage Collector](/java/java-garbage-collector.md)
 - [Java Class File](/java/java-class-file.md)
+- [Java Classloader](/java/java-classloader.md)
 - [Java Collection](/java/java-collection.md)
 - [Java Serialization](/java/java-serialization.md)
 - [Java Generics](/java/java-generics.md)
