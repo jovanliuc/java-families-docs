@@ -55,11 +55,11 @@ In Java, multithreading is achieved by creating
 multiple threads of execution, each of 
 which runs a specific block of code.
 Java threads can be created in two ways:
-by implementing the java.lang.Runnable 
-interface or by extending the java.lang.Thread 
+by implementing the `java.lang.Runnable`
+interface or by extending the `java.lang.Thread` 
 class. Once a thread is created, it can be started 
-by calling the start() method, which executes
-the thread's run() method.
+by calling the `start()` method, which executes
+the thread's `run()` method.
 
 Java threads can communicate with each other 
 using various synchronization mechanisms, 
@@ -97,8 +97,8 @@ thread, ranging from 1 (lowest) to 10 (highest).
 By default, all threads in Java have 
 a priority of 5.
 
-Thread priority can be set using the setPriority()
-method of the Thread class. Higher priority 
+Thread priority can be set using the `setPriority()`
+method of the `Thread` class. Higher priority 
 threads are given preferential treatment
 by the Java scheduler, meaning that they
 are more likely to be executed before 
@@ -131,7 +131,7 @@ be used judiciously and with careful consideration
 of the potential consequences.
 
 # Thread Safety
-ava provides a number of built-in mechanisms
+Java provides a number of built-in mechanisms
 to ensure thread safety. 
 Here are some of the key mechanisms:
 
@@ -181,8 +181,8 @@ allowing multiple tasks to be executed simultaneously.
 
 Concurrency in Java can be achieved by creating
 and managing multiple threads. You can create 
-a new thread in Java by extending the Thread class 
-or implementing the Runnable interface.
+a new thread in Java by extending the `Thread` class 
+or implementing the `Runnable` interface.
 
 When multiple threads are executing at the same time,
 they may access the same data or resources concurrently.
@@ -205,11 +205,11 @@ operations on a single variable, while the volatile
 keyword ensures that changes to a variable are visible 
 to all threads.
 
-Java also provides the Executor framework, which provides 
+Java also provides the `Executor` framework, which provides 
 a way to manage a pool of threads and execute tasks 
-concurrently. The Executor framework includes several 
-predefined thread pools, such as the CachedThreadPool,
-FixedThreadPool, and ScheduledThreadPool.
+concurrently. The `Executor` framework includes several 
+predefined thread pools, such as the `CachedThreadPool`,
+`FixedThreadPool`, and `ScheduledThreadPool`.
 
 In summary, Java provides a powerful set of tools 
 and frameworks for achieving concurrency in Java programs.
@@ -229,21 +229,21 @@ available worker threads, which reduces the overhead
 of thread creation and improves the application performance.
 
 Java provides built-in support for thread pooling 
-through the java.util.concurrent package, 
-which includes the ThreadPoolExecutor and 
-ScheduledThreadPoolExecutor classes. 
+through the `java.util.concurrent` package, 
+which includes the `ThreadPoolExecutor` and 
+`ScheduledThreadPoolExecutor` classes. 
 These classes provide configurable thread pools
 that can be customized based on the specific 
 needs of the application.
 
 To use a thread pool in Java, you typically
-create an instance of the ThreadPoolExecutor 
+create an instance of the `ThreadPoolExecutor` 
 class with a fixed number of worker threads, 
-submit tasks to the thread pool using a Runnable 
-or Callable interface, and then shutdown the 
+submit tasks to the thread pool using a `Runnable` 
+or `Callable` interface, and then shutdown the 
 thread pool when all tasks are complete.
 
-The ThreadPoolExecutor class provides various 
+The `ThreadPoolExecutor` class provides various 
 configuration options such as the core pool size,
 maximum pool size, and queue capacity. 
 The core pool size is the number of threads 
@@ -260,7 +260,7 @@ By reusing threads, thread pooling reduces the overhead
 of thread creation and destruction, and improves 
 the overall application performance.
 
-# Threadlocal
+# ThreadLocal
 Java ThreadLocal is a class that provides 
 thread-local variables in Java. A thread-local 
 variable is a variable that is local to a specific 
@@ -316,8 +316,8 @@ an instance of the MyRunnable class.
 
 In the MyRunnable class, we first retrieve the 
 current value of the threadLocal variable
-using the get() method. We then print out
-the value and increment it using the set() method.
+using the `get()` method. We then print out
+the value and increment it using the `set()` method.
 
 Since we're running two threads simultaneously, 
 we expect to see different output for each thread. 
@@ -383,8 +383,8 @@ public class AtomicExample {
 }
 ```
 In this example, we create an instance of AtomicInteger 
-and perform atomic operations like incrementAndGet(),
-addAndGet(), and compareAndSet() on it. 
+and perform atomic operations like `incrementAndGet()`,
+`addAndGet()`, and `compareAndSet()` on it. 
 These operations are thread-safe and ensure that the 
 variable is accessed in a synchronized manner.
 
@@ -400,8 +400,8 @@ AQS works by allowing threads to wait in a queue
 for a particular resource to become available,
 and then acquiring the resource once it becomes available. 
 This mechanism is implemented using two main classes:
-Condition and Node. Node represents a waiting thread,
-while Condition represents a condition variable
+`Condition` and `Node`. `Node` represents a waiting thread,
+while `Condition` represents a condition variable
 that a thread can wait on.
 
 AQS provides two main methods for acquiring 
@@ -479,10 +479,10 @@ the performance and responsiveness of a program.
 
 ## 2. How can we create a thread in Java?
 There are two ways to create a thread in Java.
-The first way is to extend the Thread class 
-and override its run() method to define the 
+The first way is to extend the `Thread` class 
+and override its `run()` method to define the 
 code that the thread will execute. 
-The second way is to implement the Runnable interface 
+The second way is to implement the `Runnable` interface 
 and pass an instance of the implementation 
 to a new Thread object.
 
