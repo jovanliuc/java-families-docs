@@ -64,18 +64,18 @@ such as `java.lang.*` and `java.util.*`,
 that are required for the JVM to start up.
 
 ## 4. What is the extension classloader?
-A: The extension classloader is responsible
+The extension classloader is responsible
 for loading classes from the extension directories, 
-which are specified by the java.ext.dirs system property.
+which are specified by the j`ava.ext.dirs` system property.
 
 ## 5. What is the system classloader?
-A: The system classloader is responsible 
+The system classloader is responsible 
 for loading classes from the classpath,
 which is specified by the `java.class.path`
 system property.
 
 ## 6. What is the delegation model of classloaders?
-A: The delegation model of classloaders is 
+The delegation model of classloaders is 
 a mechanism by which classloaders delegate 
 the task of loading a class to their parent
 classloader before attempting to load the 
@@ -106,4 +106,4 @@ the class itself.
 ## 10. Can you create your own classloader in Java?
 Yes, you can create your own classloader 
 in Java by extending the `java.lang.ClassLoader` class 
-and overriding its loadClass() method.
+and overriding its `loadClass()` method.
