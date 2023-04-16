@@ -7,7 +7,8 @@ and the usages of Java-related technical stacks.
 - [Introduction](data-structure-algorithms/introduction.md)
 - Data Structure
   - [Array](/data-structure-algorithms/data-structure/array.md)
-  
+  - [Linked List](/data-structure-algorithms/data-structure/linked-list.md)
+  - [Stack](/data-structure-algorithms/data-structure/stack.md)
 
 # Java
 - [Java Introduction](/java/java-introduction.md)
