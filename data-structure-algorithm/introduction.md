@@ -63,4 +63,5 @@ and understanding their concepts and implementations
 is crucial for any programmer or computer scientist.
 
 > ***Classification of Data Structure***
+> <br>
 > ![Classification of Data Structure](./assets/ClassificationofDataStructure-660x347.jpg)
