@@ -3,6 +3,9 @@ The `java-families-docs` helps the newcomers
 to learn some basic concepts 
 and the usages of Java-related technical stacks.
 
+# Data Structure & Algorithm
+- [Introduction](data-structure-algorithm/introduction.md)
+
 # Java
 - [Java Introduction](/java/java-introduction.md)
 - [Java Basic Syntax](/java/java-basic-syntax.md)
