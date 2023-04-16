@@ -64,7 +64,7 @@ is crucial for any programmer or computer scientist.
 
 > ***Classification of Data Structure***
 > <br>
-> ![Classification of Data Structure](./assets/ClassificationofDataStructure-660x347.jpg)
+> ![Classification of Data Structure](assets/ClassificationofDataStructure-660x347.jpg)
 
 # Types of Algorithms
 There are several types of algorithms available. 

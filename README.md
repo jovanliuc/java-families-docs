@@ -4,7 +4,10 @@ to learn some basic concepts
 and the usages of Java-related technical stacks.
 
 # Data Structure & Algorithm
-- [Introduction](data-structure-algorithm/introduction.md)
+- [Introduction](data-structure-algorithms/introduction.md)
+- Data Structure
+  - [Array](/data-structure-algorithms/data-structure/array.md)
+  
 
 # Java
 - [Java Introduction](/java/java-introduction.md)
