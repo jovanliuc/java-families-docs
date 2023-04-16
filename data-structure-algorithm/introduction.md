@@ -61,3 +61,6 @@ Overall, data structures and algorithms are essential
 for developing efficient and effective software solutions, 
 and understanding their concepts and implementations 
 is crucial for any programmer or computer scientist.
+
+> ***Classification of Data Structure***
+> ![Classification of Data Structure](./assets/ClassificationofDataStructure-660x347.jpg)
