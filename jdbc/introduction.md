@@ -195,3 +195,105 @@ secure method to store and retrieve this information.
 JDBC code thoroughly to ensure that it is 
 working as expected and doesn't have any
 performance or security issues.
+
+# JDBC CRUD Examples
+Sure, here are some examples of 
+JDBC CRUD (Create, Read, Update, Delete) 
+operations:
+
+**Create (INSERT)**
+```java
+String sql = "INSERT INTO mytable (column1, column2, column3) VALUES (?, ?, ?)";
+
+try (Connection conn = DriverManager.getConnection(url, user, password);
+     PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+    pstmt.setString(1, "value1");
+    pstmt.setInt(2, 123);
+    pstmt.setBoolean(3, true);
+
+    int rowsInserted = pstmt.executeUpdate();
+    if (rowsInserted > 0) {
+        System.out.println("A new row has been inserted.");
+    }
+} catch (SQLException e) {
+    e.printStackTrace();
+}
+```
+This example creates a new row in the "mytable"
+table with the specified values for the columns 
+"column1", "column2", and "column3".
+
+**Read (SELECT)**
+```java
+String sql = "SELECT * FROM mytable WHERE id = ?";
+
+try (Connection conn = DriverManager.getConnection(url, user, password);
+     PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+    pstmt.setInt(1, 1);
+    ResultSet rs = pstmt.executeQuery();
+
+    while (rs.next()) {
+        int id = rs.getInt("id");
+        String column1 = rs.getString("column1");
+        int column2 = rs.getInt("column2");
+        boolean column3 = rs.getBoolean("column3");
+
+        System.out.println(id + ", " + column1 + ", " + column2 + ", " + column3);
+    }
+} catch (SQLException e) {
+    e.printStackTrace();
+}
+```
+This example retrieves the row from the "mytable" 
+table with the specified ID, and prints 
+out the values of its columns.
+
+**Update**
+```java
+String sql = "UPDATE mytable SET column1 = ?, column2 = ?, column3 = ? WHERE id = ?";
+
+try (Connection conn = DriverManager.getConnection(url, user, password);
+     PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+    pstmt.setString(1, "new value1");
+    pstmt.setInt(2, 456);
+    pstmt.setBoolean(3, false);
+    pstmt.setInt(4, 1);
+
+    int rowsUpdated = pstmt.executeUpdate();
+    if (rowsUpdated > 0) {
+        System.out.println("The row has been updated.");
+    }
+} catch (SQLException e) {
+    e.printStackTrace();
+}
+```
+This example updates the row in the "mytable" 
+table with the specified ID, changing
+the values of its columns.
+
+**Delete**
+```java
+String sql = "DELETE FROM mytable WHERE id = ?";
+
+try (Connection conn = DriverManager.getConnection(url, user, password);
+     PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+    pstmt.setInt(1, 1);
+
+    int rowsDeleted = pstmt.executeUpdate();
+    if (rowsDeleted > 0) {
+        System.out.println("The row has been deleted.");
+    }
+} catch (SQLException e) {
+    e.printStackTrace();
+}
+```
+This example deletes the row from the "mytable" 
+table with the specified ID.
+
+These are just some basic examples, but JDBC
+can be used to perform many other types of
+database operations as well.
