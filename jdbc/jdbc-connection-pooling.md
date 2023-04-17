@@ -1,6 +1,6 @@
 [Back to Home](../README.md)
 # The Overview of JDBC Connection Pooling
-DBC Connection Pooling is a technique used 
+JDBC Connection Pooling is a technique used 
 to improve the performance and scalability 
 of Java database-driven applications that 
 require frequent database connections. 
@@ -47,9 +47,9 @@ of Java applications that interact with databases.
 It is widely used in enterprise applications and 
 is supported by most JDBC drivers.
 
-# JDBC Connection Pooling Packages
+# JDBC Connection Pooling Libraries
 DBC connection pooling can be implemented using 
-various third-party packages. Here are some 
+various third-party libraries. Here are some 
 popular JDBC connection pooling packages:
 
 - `Apache Commons DBCP` (Database Connection Pooling) - 
@@ -166,14 +166,14 @@ Connection Pooling in Java:
     ```
 
 In all three examples, a connection pool is created 
-using either the Apache Commons DBCP or HikariCP libraries,
-or the JDBC Connection Pooling API. A database connection 
+using either the `Apache Commons DBCP` or `HikariCP` libraries,
+or the `JDBC Connection Pooling API`. A database connection 
 is obtained from the pool using the `getConnection()` method,
 and the connection is closed after use using the `close()`
 method.
 
 # JDBC Connection Pooling FAQ
-1. What is JDBC connection pooling?
+## 1. What is JDBC connection pooling?
 JDBC connection pooling is a mechanism for managing 
 and reusing database connections within an application. 
 Instead of creating a new database connection 
@@ -181,7 +181,7 @@ each time an application needs to interact with
 the database, a pool of pre-established connections 
 is maintained and reused as needed.
 
-2. Why is JDBC connection pooling important?
+## 2. Why is JDBC connection pooling important?
 JDBC connection pooling can significantly improve 
 the performance and scalability of database-driven 
 applications. By reusing existing connections
@@ -189,7 +189,7 @@ rather than creating new ones, it reduces the
 overhead of establishing and tearing down connections,
 which can be a time-consuming process.
 
-3. How does JDBC connection pooling work?
+## 3. How does JDBC connection pooling work?
 JDBC connection pooling works by maintaining a pool
 of pre-established database connections. 
 When an application needs to interact with the
@@ -198,7 +198,7 @@ If a connection is available, it is returned to
 the application. If no connection is available, 
 a new one is created and added to the pool.
 
-4. What are the benefits of JDBC connection pooling?
+## 4. What are the benefits of JDBC connection pooling?
 The benefits of JDBC connection pooling include 
 improved performance, reduced resource usage, 
 and increased scalability. By reusing connections,
@@ -206,7 +206,7 @@ it reduces the overhead of establishing and tearing
 down connections, which can be a significant 
 performance bottleneck in database-driven applications.
 
-5. What are the drawbacks of JDBC connection pooling?
+## 5. What are the drawbacks of JDBC connection pooling?
 The main drawback of JDBC connection pooling 
 is the potential for connection leaks. 
 If a connection is not properly closed, 
@@ -215,7 +215,7 @@ consuming resources and potentially causing
 problems for other applications that
 require connections from the pool.
 
-6. How can connection leaks be prevented in JDBC connection pooling?
+## 6. How can connection leaks be prevented in JDBC connection pooling?
 Connection leaks can be prevented by ensuring
 that connections are always properly closed 
 when they are no longer needed. 
@@ -225,7 +225,7 @@ when they are no longer needed, or by implementing
 a connection lifecycle listener to detect 
 and close leaked connections.
 
-7. How can JDBC connection pooling be configured?
+## 7. How can JDBC connection pooling be configured?
 JDBC connection pooling can be configured 
 using a variety of parameters, including 
 the minimum and maximum number of connections 
@@ -234,7 +234,7 @@ and the maximum wait time for connections.
 These parameters can be set using configuration
 files or programmatically using the JDBC API.
 
-8. What are some popular JDBC connection pooling libraries?
+## 8. What are some popular JDBC connection pooling libraries?
 Some popular JDBC connection pooling libraries 
 include `Apache Commons DBCP`, `HikariCP`, and `BoneCP`.
 These libraries provide a simple, efficient, 
