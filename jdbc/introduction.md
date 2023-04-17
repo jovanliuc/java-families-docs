@@ -94,18 +94,18 @@ you would use the following code:
 
 3. Execute SQL statements: Once you have a connection 
 to the database, you can execute SQL statements
-using a Statement or a `PreparedStatement` object. 
+using a `Statement` or a `PreparedStatement` object. 
 A `Statement` is used to execute simple SQL statements 
 that do not have any parameters,
 while a `PreparedStatement` is used to 
 execute SQL statements that have parameters.
 Here is an example of how to execute a simple SQL
-statement using a Statement:
+statement using a `Statement`:
     ```java
     Statement statement = connection.createStatement();
     ResultSet resultSet = statement.executeQuery("SELECT * FROM mytable");
     while (resultSet.next()) {
-    // process each row of the result set
+        // process each row of the result set
     }
     ```
 
@@ -121,7 +121,7 @@ For example:
 
 **Retrieving Data from a ResultSet**
 
-When you execute a SELECT statement using JDBC, 
+When you execute a `SELECT` statement using JDBC, 
 the result is returned as a `ResultSet` object.
 You can use the methods of the `ResultSet` object
 to retrieve the data from the result set.
@@ -394,7 +394,7 @@ stmt.close();
 ```
 
 ## 12. What is a prepared statement in JDBC?
-A: A prepared statement is a precompiled SQL statement 
+A prepared statement is a precompiled SQL statement 
 that can be executed multiple times with different parameters. 
 It provides better performance and security than regular 
 SQL statements, because the SQL statement is only 
@@ -407,5 +407,5 @@ statement in JDBC:
 String sql = "INSERT INTO mytable (column1, column2) VALUES (?, ?)";
 PreparedStatement pstmt = conn.prepareStatement(sql);
 pstmt.setString(1, "value1");
-pstmt
+pstmt.setString(2, "value2");
 ```
