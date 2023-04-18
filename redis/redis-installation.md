@@ -1,38 +1,79 @@
 [Back to Home](../README.md)
-# Redis Installation on Mac OS X
-Here's how you can install Redis on macOS:
+# Install Redis on macOS
+Use Homebrew to install and start Redis on macOS
 
-1. **Install Homebrew**: Homebrew is a popular
-package manager for macOS. To install it, 
-open a Terminal window and run the following command:
-    ```shell
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    
-    ```
+This guide shows you how to install Redis on macOS
+using Homebrew. Homebrew is the easiest way
+to install Redis on macOS. If you'd prefer 
+to build Redis from the source files on macOS, 
+see Installing Redis from Source.
 
-2. **Install Redis**: Once Homebrew is installed, 
-you can use it to install Redis by running the following command:
-    ```shell
-    brew install redis
-    ```
+## Prerequisites
+First, make sure you have Homebrew installed. From the terminal, run:
+```shell
+brew --version
+```
+If this command fails, you'll need to follow
+the Homebrew installation instructions.
 
-3. **Start Redis**: After the installation is complete, 
-you can start Redis using the following command:
-    ```shell
-    brew services start redis
-    ```
-    This will start Redis as a background service, 
-    which means it will run automatically every time
-    you start your computer.
+## Installation
+From the terminal, run:
+```shell
+brew install redis
+```
+This will install Redis on your system.
 
-4. **Test Redis**: You can test if Redis is working correctly
-by running the following command:
-    ```shell
-    redis-cli ping
-    ```
-    If Redis is running correctly, it should respond with PONG.
+## Starting and stopping Redis in the foreground
+To test your Redis installation, you can run the **redis-server**
+executable from the command line:
+```shell
+redis-server
+```
+If successful, you'll see the startup logs for Redis, 
+and Redis will be running in the foreground.
 
-That's it! Redis should now be installed and running
-on your macOS system. You can use Redis by connecting
-to it using a Redis client, such as redis-cli.
+To stop Redis, enter **Ctrl-C**.
 
+## Starting and stopping Redis using launchd
+As an alternative to running Redis in the foreground, 
+you can also use launchd to start the process 
+in the background:
+```shell
+brew services start redis
+```
+
+This launches Redis and restarts it at login.
+You can check the status of a launchd managed 
+Redis by running the following:
+```shell
+brew services info redis
+```
+
+If the service is running, you'll see 
+output like the following:
+```shell
+redis (homebrew.mxcl.redis)
+Running: ✔
+Loaded: ✔
+User: miranda
+PID: 67975
+```
+
+To stop the service, run:
+```shell
+brew services stop redis
+```
+
+## Connect to Redis
+Once Redis is running, you can test it by running **redis-cli**:
+```shell
+redis-cli
+```
+
+This will open the Redis REPL. Try running some commands:
+```shell
+127.0.0.1:6379> lpush demos redis-macOS-demo
+OK
+127.0.0.1:6379> rpop demos
+"redis-macOS-demo"
+```
