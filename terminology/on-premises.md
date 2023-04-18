@@ -40,6 +40,6 @@ optimize performance and prevent overload.
 location for safekeeping in case of data 
 loss or system failure.
 
-- **Disaster** recovery: The process of restoring data 
+- **Disaster recovery**: The process of restoring data 
 and system functionality after a catastrophic event,
 such as a natural disaster or cyberattack.
