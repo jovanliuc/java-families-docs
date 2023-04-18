@@ -1,5 +1,5 @@
 [Back to Home](../README.md)
-# Redis Installation for Mac OS X
+# Redis Installation on Mac OS X
 Here's how you can install Redis on macOS:
 
 1. **Install Homebrew**: Homebrew is a popular
