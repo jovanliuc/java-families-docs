@@ -32,3 +32,6 @@ and the usages of Java-related technical stacks.
 # JDBC
 - [Introduction](/jdbc/introduction.md)
 - [JDBC Connection Pooling](/jdbc/jdbc-connection-pooling.md)
+
+# Terminology
+- [On-Premises]
