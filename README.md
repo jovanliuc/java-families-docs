@@ -34,4 +34,4 @@ and the usages of Java-related technical stacks.
 - [JDBC Connection Pooling](/jdbc/jdbc-connection-pooling.md)
 
 # Terminology
-- [On-Premises]
+- [On-Premises](/terminology/on-premises.md)
