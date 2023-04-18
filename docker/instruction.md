@@ -100,7 +100,7 @@ you with a unified interface to manage your entire infrastructure.
 
 Some key features of Docker Swarm include:
 
-- **Automatic** load balancing: Docker Swarm automatically load 
+- **Automatic load balancing**: Docker Swarm automatically load 
 balances your containers across the nodes in your swarm, 
 distributing the workload evenly and ensuring high availability.
 
