@@ -35,6 +35,7 @@ and the usages of Java-related technical stacks.
 
 # Redis
 - [Introduction](/redis/introduction.md)
+- [Redis Installation](/redis/redis-installation.md)
 
 # Terminology
 - [On-Premises](/terminology/on-premises.md)
