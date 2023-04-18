@@ -37,6 +37,7 @@ and the usages of Java-related technical stacks.
 - [Introduction](/redis/introduction.md)
 - [Redis Installation](/redis/redis-installation.md)
 - [Redis CLI](/redis/redis-cli.md)
+- [RedisInsight](/redis/redis-insight.md)
 
 # Docker
 - [Introduction](/docker/instruction.md)
