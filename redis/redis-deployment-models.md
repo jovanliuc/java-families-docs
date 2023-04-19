@@ -5,12 +5,12 @@ on the use case, performance requirements, scalability,
 and other factors. Here are some of the common 
 deployment models for Redis:
 
-1. **Standalone**: This is the simplest deployment model 
+1. **[Standalone](#standalone)**: This is the simplest deployment model 
 where Redis is deployed as a single instance on a 
 single server. It's suitable for small-scale applications 
 or for testing and development purposes.
 
-2. **Master-Slave Replication**: This deployment model 
+2. **[Master-Slave Replication](#master-slave-replication)**: This deployment model 
 involves a master Redis instance and one or more 
 slave instances that replicate data from the master. 
 The master is responsible for all write operations,
@@ -18,14 +18,14 @@ and the slaves are used for read operations.
 It's a good option for applications that require
 high availability and read scalability.
 
-3. **Cluster**: Redis Cluster is a distributed deployment model
+3. **[Cluster](#cluster)**: Redis Cluster is a distributed deployment model
 that allows for automatic sharding of data across multiple
 nodes. It provides high scalability and availability 
 for large-scale applications. Redis Cluster is composed 
 of multiple Redis nodes, each running a separate 
 instance of Redis.
 
-4. **Sentinel**: Redis Sentinel is a deployment model that
+4. **[Sentinel](#sentinel)**: Redis Sentinel is a deployment model that
 provides high availability for Redis instances. 
 It works by monitoring Redis instances and automatically 
 promoting a slave to a master if the master fails. 
@@ -33,7 +33,7 @@ Sentinel can be used in conjunction with Master-Slave
 Replication to provide an additional layer of failover
 protection.
 
-5. **Redis Enterprise**: Redis Enterprise is a commercial 
+5. **[Redis Enterprise](#redis-enterprise)**: Redis Enterprise is a commercial 
 Redis deployment model that provides advanced features 
 such as active-active geo-distribution, automatic sharding,
 and high-availability failover. It's suitable for 
