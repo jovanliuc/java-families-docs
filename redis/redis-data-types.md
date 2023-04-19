@@ -1,4 +1,5 @@
 [Back to Home](../README.md)
+# The Overview of Redis Data Types
 Redis supports the following data types:
 
 1. **Strings**: The most basic data type in Redis, 
