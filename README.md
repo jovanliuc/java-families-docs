@@ -40,6 +40,7 @@ and the usages of Java-related technical stacks.
 - [RedisInsight](/redis/redis-insight.md)
 - [Redis Deployment Models](/redis/redis-deployment-models.md)
 - [Redis Data Types](/redis/redis-data-types.md)
+- [Redis Client for Java](/redis/redis-client-for-java.md)
 
 # Docker
 - [Introduction](/docker/instruction.md)
