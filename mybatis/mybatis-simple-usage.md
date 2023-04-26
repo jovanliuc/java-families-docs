@@ -1,6 +1,6 @@
 [Back to Home](../README.md#mybatis)
 # The Overview of MyBatis Simple Usage
-here's a simple usage guide for MyBatis:
+Here's a simple usage guide for MyBatis:
 
 1. Define your database schema: Before you can
 use MyBatis, you need to have a database 
