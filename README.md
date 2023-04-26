@@ -35,6 +35,8 @@ and the usages of Java-related technical stacks.
 
 # MyBatis
 - [Introduction](/mybatis/introduction.md)
+- [MyBatis Tutorials](/mybatis/mybatis-tutorials.md)
+- [MyBatis Guidelines](/mybatis/mybatis-guidelines.md)
 
 # Redis
 - [Introduction](/redis/introduction.md)
