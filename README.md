@@ -33,6 +33,9 @@ and the usages of Java-related technical stacks.
 - [Introduction](/jdbc/introduction.md)
 - [JDBC Connection Pooling](/jdbc/jdbc-connection-pooling.md)
 
+# MyBatis
+- [Introduction](/mybatis/introduction.md)
+
 # Redis
 - [Introduction](/redis/introduction.md)
 - [Redis Installation](/redis/redis-installation.md)
