@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#redis)
 # The Overview of Redis Data Types
 Redis supports the following data types:
 

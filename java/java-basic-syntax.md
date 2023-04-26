@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#java)
 # The Overview of Java Basic Syntax
 Here are some basic Java syntax rules:
 

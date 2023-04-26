@@ -1,4 +1,4 @@
-[Back to Home](../../README.md)
+[Back to Home](../../README.md#data-structure--algorithm)
 # The Overview of Stack
 A stack is a linear data structure that stores
 a collection of elements, where the order in

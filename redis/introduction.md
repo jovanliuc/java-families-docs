@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#redis)
 # The Overview of Redis
 Redis is an open-source, in-memory data structure store.
 It is often used as a database, cache, and message broker.

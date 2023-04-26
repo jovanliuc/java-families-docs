@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#java)
 # The Introduction of Java Language
 Java is a popular programming language 
 that was first released in 1995 by Sun Microsystems. 

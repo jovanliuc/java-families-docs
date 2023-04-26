@@ -1,4 +1,4 @@
-[Back to Home](../../README.md)
+[Back to Home](../../README.md#data-structure--algorithm)
 # The Overview of Linked List
 A linked list is a linear data structure in which
 elements are stored in nodes. Each node contains 

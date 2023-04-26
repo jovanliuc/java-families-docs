@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#redis)
 # Redis CLI
 Redis CLI (Command Line Interface) is a command-line
 tool used to interact with Redis, an in-memory key-value

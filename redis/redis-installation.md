@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#redis)
 # Install Redis on macOS
 Use Homebrew to install and start Redis on macOS
 

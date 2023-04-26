@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#redis)
 # The Overview of Redis Deployment Models
 Redis can be deployed in different ways depending 
 on the use case, performance requirements, scalability, 

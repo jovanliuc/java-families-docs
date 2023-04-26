@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#java)
 # The Overview of Java Garbage Collector
 In Java, the garbage collector is responsible for 
 automatically freeing up memory that is no longer being used by the program. 

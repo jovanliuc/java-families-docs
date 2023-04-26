@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#redis)
 # The Overview of Redis Client for Java
 There are several Redis clients available for Java 
 that allow you to interact with Redis.

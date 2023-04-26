@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#terminology)
 # On-Premises
 On-Premises terminology refers to the computing
 infrastructure that is deployed within an organization's 

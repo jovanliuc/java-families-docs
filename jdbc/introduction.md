@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#jdbc)
 # The Overview of JDBC
 JDBC stands for Java Database Connectivity, 
 and it is a standard API for accessing relational

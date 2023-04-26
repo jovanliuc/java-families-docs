@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#redis)
 # RedisInsight
 RedisInsight is a graphical user interface (GUI) 
 and management tool for Redis that allows users 

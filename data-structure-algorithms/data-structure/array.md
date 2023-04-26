@@ -1,4 +1,4 @@
-[Back to Home](../../README.md)
+[Back to Home](../../README.md#data-structure--algorithm)
 # The Overview of Array
 An array is a data structure that stores a 
 fixed-size sequence of elements of the same

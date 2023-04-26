@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#java)
 # The Overview of Java Exception
 In Java, an exception is an event 
 that occurs during the execution of a program 

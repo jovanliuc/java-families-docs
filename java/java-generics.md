@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#java)
 # The Overview of Java Generics
 Java generics is a feature in Java programming 
 language that allows you to write more generic

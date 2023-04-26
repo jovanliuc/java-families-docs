@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#java)
 # The Overview of Java Proxy
 In Java, there are two types of proxies: 
 dynamic proxies and static proxies.

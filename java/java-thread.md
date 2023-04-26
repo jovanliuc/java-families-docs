@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#java)
 # The Overview of Java Thread
 Java Thread is a lightweight process 
 that enables multiple threads of execution

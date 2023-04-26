@@ -1,4 +1,4 @@
-[Back to Home](../README.md)
+[Back to Home](../README.md#mybatis)
 # The Overview of MyBatis Guidelines
 Here are some guidelines for working with MyBatis:
 
