@@ -40,6 +40,7 @@ and the usages of Java-related technical stacks.
 - [MyBatis Simple Usage Guide](/mybatis/mybatis-simple-usage-guide.md)
 - [MyBatis Java Enterprise Usage Guide](/mybatis/mybatis-java-enterprise-usage-guide.md)
 - [MyBatis Spring Usage Guide](/mybatis/mybatis-spring-usage-guide.md)
+- [MyBatis XML Configuration](/mybatis/mybatis-xml-configuration.md)
 
 # Redis
 - [Introduction](/redis/introduction.md)
