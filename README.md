@@ -60,6 +60,7 @@ and the usages of Java-related technical stacks.
 
 # ADFS
 - [ADFS Introduction](/adfs/adfs-introduction.md)
+- [ADFS Guidelines](/adfs/adfs-guidelines.md)
 
 # Terminology
 - [On-Premises](/terminology/on-premises.md)
