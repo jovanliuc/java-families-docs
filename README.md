@@ -59,7 +59,7 @@ and the usages of Java-related technical stacks.
 - [SSL/TLS)](/security/ssl_or_tls.md)
 
 # ADFS
-- [ADFS](/adfs/adfs-introduction.md)
+- [ADFS Introduction](/adfs/adfs-introduction.md)
 
 # Terminology
 - [On-Premises](/terminology/on-premises.md)
