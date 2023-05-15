@@ -41,6 +41,7 @@ and the usages of Java-related technical stacks.
 - [MyBatis Java Enterprise Usage Guide](/mybatis/mybatis-java-enterprise-usage-guide.md)
 - [MyBatis Spring Usage Guide](/mybatis/mybatis-spring-usage-guide.md)
 - [MyBatis XML Configuration](/mybatis/mybatis-xml-configuration.md)
+- [MyBatis XML Mapper](/mybatis/mybatis-xml-mapper.md)
 
 # Redis
 - [Introduction](/redis/introduction.md)
@@ -56,6 +57,9 @@ and the usages of Java-related technical stacks.
 
 # Security
 - [SSL/TLS)](/security/ssl_or_tls.md)
+
+# ADFS
+- [ADFS](/adfs/adfs-introduction.md)
 
 # Terminology
 - [On-Premises](/terminology/on-premises.md)
