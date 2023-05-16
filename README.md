@@ -64,3 +64,5 @@ and the usages of Java-related technical stacks.
 
 # Terminology
 - [On-Premises](/terminology/on-premises.md)
+- [PMO](/terminology/pmo.md)
+
