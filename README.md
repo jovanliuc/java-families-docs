@@ -57,6 +57,7 @@ and the usages of Java-related technical stacks.
 
 # Security
 - [SSL/TLS)](/security/ssl_or_tls.md)
+- [OAuth](/security/open-authorization.md)
 - [Bearer Authentication](/security/bearer-authentication.md)
 
 # ADFS
